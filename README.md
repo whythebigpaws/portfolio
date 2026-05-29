@@ -1,0 +1,1 @@
+To be fleshed out. A portfolio to showcase technical and programing skills to offset a GRC focused resume. A locale for public facing resume information, as well as an excuse to purchase silly domain names. 
