@@ -1,5 +1,7 @@
 body {
-	margin-top: 5%; /* I want this to be a %, but will need something for now.  */
+	margin-top: 15%; /* I want this to be a %, but will need something for now.  */
+	background: #000;
+	filter: invert(1);
 }
 
 .filesystemUI {
@@ -9,6 +11,43 @@ body {
 .content-left-item {
 	margin-bottom: 25px;
 }  
+
+.file-tree ul {
+	font-family: courier;
+	margin: 0;
+	padding-left: 3rem;
+	list-style: none;
+	line-height: 1.25;
+	position: relative;
+	overflow: hidden;
+}
+
+.file-tree li:not(:last-child) > ul::before {
+	content: '\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020\2502\0020';
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 1em;
+}
+
+.file-tree > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.file-tree li {
+	background: #fff;
+	position: relative;
+}
+
+.file-tree li::before {
+	content: '\251C\2500\2500\0020';
+}
+
+.file-tree li:last-child::before {
+ 	content: '\2514\2500\2500\0020';
+}
 
 footer {
 	margin: 50px 0;
