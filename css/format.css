@@ -15,6 +15,7 @@ body {
 
 .file-tree ul {
 	font-family: courier;
+	color:white;
 	margin: 0;
 	padding-left: 3rem;
 	list-style: none;
