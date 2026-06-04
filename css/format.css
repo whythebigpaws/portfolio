@@ -4,6 +4,31 @@ body {
 	background: #000;
 	filter: invert(1);
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .filesystemUI {
 	margin-bottom: 25px;
@@ -49,6 +74,13 @@ body {
 
 .file-tree li:last-child::before {
  	content: '\2514\2500\2500\0020';
+}
+
+.hidden-button {
+    appearance: none;
+    outline: none;
+    border: 0;
+    background: transparent;
 }
 
 footer {
