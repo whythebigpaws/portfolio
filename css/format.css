@@ -1,5 +1,6 @@
 body {
 	margin-top: 15%; /* I want this to be a %, but will need something for now.  */
+	margin-left: 15%;
 	background: #000;
 	filter: invert(1);
 }
